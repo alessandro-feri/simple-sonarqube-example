@@ -25,4 +25,4 @@ cache:
       - $HOME/.sonar/cache
 
 script:
-   - mvn -f simple-sonarqube-example/pom.xml -Pjacoco clean verify sonar:sonar 
+   - mvn -f simple-sonarqube-example/pom.xml org.jacoco:jacoco-maven-plugin:prepare-agent clean verify sonar:sonar 
