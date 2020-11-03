@@ -16,6 +16,7 @@
   		<maven.compiler.target>1.8</maven.compiler.target>	
   		
   		<sonar.projectKey>alessandro-feri_simple-sonarqube-example2</sonar.projectKey>
+  		<sonar.scanner.force-deprecated-java-version>true</sonar.scanner.force-deprecated-java-version>
   	</properties>
   	
   	<dependencies>
