@@ -1,0 +1,28 @@
+language: java
+
+# explicit distribution specification
+dist: xenial
+
+jdk: openjdk8
+
+git:
+  depth: false
+
+services:
+   - docker
+   - xvfb
+
+addons:
+  sonarcloud:
+    organization: "alessandroferi-github"
+
+# skip installation step
+install: true
+
+cache:
+   directories:
+      - $HOME/.m2
+      - $HOME/.sonar/cache
+
+script:
+   - mvn -f simple-sonarqube-example/pom.xml -Pjacoco clean verify sonar:sonar 
