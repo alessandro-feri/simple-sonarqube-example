@@ -6,8 +6,10 @@ package com.examples.simple;
  */
 public class App {
 
+	private String helloWorld = "Hello World!";
+	
 	public String getMessage() {
-		return "Hello World!";
+		return helloWorld;
 	}
 
 }
